@@ -52,9 +52,9 @@ function showProfile(data) {
   fullNameElement.textContent = name;
   usernameElement.textContent = `${data.login}`;
   specializationElement.textContent = `${specialization}`;
-  followersElement.textContent = `${data.followers} Followers`;
+  followersElement.textContent = `Followers ${data.followers}`;
   followingElement.textContent = `Following ${data.following}`;
-  repositoriesCountElement.textContent = `Repositories: ${repositories.length}`;
+  repositoriesCountElement.textContent = `Repositories ${repositories.length}`;
 }
 
 async function fetchRepositories() {
@@ -89,7 +89,7 @@ function displayRepositories() {
 
     const repoLanguage = document.createElement('span');
     repoLanguage.classList.add('repo-language');
-    repoLanguage.textContent = repo.language || 'N/A';
+    repoLanguage.textContent = repo.language || '';
 
     repoBlock.appendChild(repoName);
     repoBlock.appendChild(repoLanguage);

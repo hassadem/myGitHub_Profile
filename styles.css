@@ -5,70 +5,54 @@ body {
     background-color: #f8f8f8;
   }
   
-  .container {
-    max-width: 100%;
-    margin: 30px auto;
-    background-color: #3e3e3e;
-    border-radius: 8px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    padding: 30px;
-  }
-  h1 {
-    font-size: 32px;
-    text-align: center;
-    margin-bottom: 20px;
-    color: #4f4f6d;
-  }
-  
-  .profile {
-    text-align: center;
-    margin-bottom: 30px;
-  }
-  
-  .profile-picture {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    border: 4px solid #fff;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-  }
-  
-  .profile-picture:hover {
-    transform: scale(1.1);
-  }
-  
-  .username {
-    font-size: 24px;
-    color: white;
-    margin-top: 10px;
-  }
-  
-  .counts {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-  }
-  
-  .counts p {
-    font-size: 18px;
-    color: white;
-    margin: 0 20px;
-    display: flex;
-    align-items: center;
-  }
-  
-  .counts p svg {
-    width: 18px;
-    height: 18px;
-    margin-right: 5px;
-  }
-  
-  .repositories-count {
-    font-size: 18px;
-    color: #555;
-  }
+.profile {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.profile-picture-container {
+  margin-right: 20px;
+}
+
+.profile-picture {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 4px solid #fff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.profile-picture:hover {
+  transform: scale(1.1);
+}
+
+.profile-text-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.username,
+.specialization {
+  margin: 5px 0;
+}
+
+.counts {
+  margin-top: 20px;
+}
+
+.counts p {
+  display: inline-block;
+  border: 10px;
+  background-color: rgba(77,115,248,.2);
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin: 5px;
+  line-height: 60px;
+}
+
+
   
   .repositories {
     margin-top: 30px;
